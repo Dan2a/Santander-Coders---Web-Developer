@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <hr>
+        <!-- Cria formulario -->
+        <form >
+            <!-- Label é descrição para formularios -->
+            <!-- Name - Forma com que o JavaScript sabe qual campo pegar  -->
+            <!-- Placeholder - sujestão de preenchimento  -->
+            <!-- value - Definie valor do preenchimento  -->
+            
+            <!-- Caixa de texto -->
+            <div>
+                <label for="texto">Nome: </label>
+                <input type="text" name="nome" id="texto">
+            </div>
+            <!-- Senha -->
+            <div>
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha"id="senha">
+            </div>
+            <!-- Email -->
+            <div>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email"id="email">
+            </div>
+            <!-- Senha -->
+            <div>
+                <label for="data">Data de Nascimento: </label>
+                <input type="date" name="data"id="data">
+            </div>
+            <!-- Horario -->
+            <div>
+                <label for="hora">Horário : </label>
+                <input type="time" name="hora"id="hora">
+            </div>
+            <!-- Numeros -->
+            <div>
+                <label for="numero">Numero : </label>
+                <input type="number" name="numero"id="numero">
+            </div>
+            <!-- Arquivos -->
+            <div>
+                <label for="arquivo">Arquivo : </label>
+                <input type="file" name="arquivo"id="arquivo">
+            </div>
+            <!-- URL -->
+            <div>
+                <label for="url">url : </label>
+                <input type="url" name="url"id="url">
+            </div>
+            <!-- Cor -->
+            <div>
+                <label for="cor">Cor : </label>
+                <input type="color" name="cor"id="cor">
+            </div>
+            <!-- Range -->
+            <div>
+                <label for="range">Range : </label>
+                <input type="range" name="range"id="range" >
+            </div>
+            <!-- checkbox -->
+            <div>
+                <label for="checkbox">checkbox : </label>
+                <input type="checkbox" name="checkbox"id="checkbox" >
+            </div>
+            <!-- radio -->
+            <div>
+                <label for="radio">radio : </label>
+                <input type="radio" name="radio"id="radio" >
+            </div>
+            <!-- caixa de texto -->
+            <div>
+                <textarea name="bio" id="bio" cols="45" rows="5"></textarea>
+            </div>
+            <!-- Select -->
+            <div>
+                <select name="select" id="select">
+                    <option value="" disabled selected>Seleciona uma das opções...</option>
+                    <option value="receita">Receita</option>
+                    <option value="despesa">Depesa</option>
+                    <option value="transferencia">Transferência</option>
+                </select>
+            </div>
+            <!-- Limpar -->
+            <div>
+                <input type="reset" name="reset"id="reset" value="Limpar" >
+            </div>
+            <!-- Enviar -->
+            <div>
+                <input type="submit" name="enviar"id="enviar" value="Enviar" >
+            </div>
+
+            
+        </form>
+    </main>
+</body>
+</html>
