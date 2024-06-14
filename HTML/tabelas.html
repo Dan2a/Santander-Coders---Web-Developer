@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no HTML</title>
+</head>
+<body>
+    <main>
+        <h1>Tabelas no HTML</h1>
+        <section id="estudantes">
+            <h2>Tabela de Alunos</h2>
+            <!-- Criação de tabela em HTML -->
+            <table border="1">
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <!-- TR cria linhas -->
+                    <tr>
+                        <!-- td cria uma celula na tabela, porém no head usamos TH devido uma formatação -->
+                         <th>Nome</th>
+                         <th>E-mail</th>
+                         <th>Matricula</th>
+                    </tr>
+                </thead>
+                <!-- Corpo da tabela -->
+                <tbody>
+                    <tr>
+                        <td>Carol Danvers</td>
+                        <td>carol.danvers@email.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>peter.parker@email.com</td>
+                        <!-- RowSPAN mescla linhas -->
+                        <td rowspan="2">2</td>
+                    </tr>
+                    <tr>
+                        <td>Tonny Stark</td>
+                        <td>tonny.stark@email.com</td>
+                        <!-- Sempre que mesclar celulas apagar uma linha das outras linhas -->
+                        <!-- <td>3</td> -->
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section id="financeiro">
+            <h2>Tabela de Controle Financeiro</h2>
+        </section>
+    </main>
+</body>
+</html>
